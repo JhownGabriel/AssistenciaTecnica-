@@ -138,8 +138,43 @@
         margin-bottom: 50px;
         font-weight: lighter;
     }
+    /* produtos */
+    main table {
+        margin: 10px auto;
+        text-align: center;
+    }
+    #produtos {
+        width: 120px;
+        height: 70px;
+        margin-right: 20px;
+        background-color: #D9D9D9;
+        border: 2px solid black;
+        border-radius: 14px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+    }
+    #produtos2 {
+        width: 120px;
+        height: 70px;
+        margin-right: 20px;
+        background-color: #D9D9D9;
+        border: 2px solid black;
+        border-radius: 14px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+    }
+    /* dicas */
+    #fundoideias {
+        background-color: #FFFFFF;
+        border-left: 4px solid #1573FF;
+        border-right: 4px solid #1573FF;
+        border-top: 2px;
+        border-radius: 11px;
+    }
     /* footer */
     footer {
+        position: absolute;
+        bottom: 0;
         margin-top: 10px;
         padding: 10px;
         background-color: #2978ED;
