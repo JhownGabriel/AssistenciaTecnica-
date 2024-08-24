@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
 </head>
 
 <body>
     <header>
         <div>
-            <span><img src="/images/casaicon.png" alt="login"></span>
-            <span><p>criar conta</p></span>
-            <span><img src="/images/login.png" alt="login"></span>
+            <table>
+                <tr>
+                    <td><a href="index.html"><img src="../images/casaicon.png" alt="login"></a></td>
+                    <td id="espacoheader"></td>
+                    <td><a href="cadastro.html"><p>criar conta</p></a></td>
+                    <td><a href="cadastro.html"><img src="../images/login.png" alt="login"></a></td>
+                </tr>
+            </table>
         </div>
     </header>
-    <nav>
-        <p id="navbar">
-            <span>produtos</span>
-            <span>serviços</span>
-            <span>dicas</span>
-        </p>
+    <nav id="navbar"> 
+        <table>    
+            <tr>
+                <td><a href="produtos.html">produtos</a></td>
+                <td><a href="escolhadeserviço.html">serviços</a></td>
+                <td><a href="dicas.html">dicas</a></td>
+            </tr>
+        </table>
     </nav>
     <main>
         <div class="logo-infos">
@@ -30,7 +37,7 @@
                     <td>
                         <p>Maquinas</p>
                     </td>
-                    <td><img src="/images/logoazul.png" alt="logo"></td>
+                    <td><img src="../images/logoazul.png" alt="logo"></td>
                     <td>
                         <p>microondas</p>
                     </td>
