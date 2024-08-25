@@ -104,7 +104,8 @@ a {
     main div form input[type=text], input[type=email], input[type=password] {
         border: none;
         border-radius: 5px;
-        background-color: #bfbfbf;
+        background-color: #D9D9D9;
+        box-shadow: 5px 5px 10px grey;
         font-size: 20px;
         padding: 5px;
     }
@@ -186,6 +187,9 @@ a {
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    #modeloinfo {
+        width: 30px;
+    }
     #confirma {
         background-color: #4FFF56;
         border: 2px solid #46CC4B;
@@ -195,13 +199,55 @@ a {
         margin: 10px 50px;
         font-weight: bold;
     }
+    #vazio {
+        border: none;
+    }
     /* dicas */
     #fundoideias {
         background-color: #FFFFFF;
-        border-left: 4px solid #1573FF;
-        border-right: 4px solid #1573FF;
-        border-top: 2px;
+        border-left: 13px solid #1573FF;
+        border-right: 13px solid #1573FF;
+        border-top: 4px solid #1573FF;
+        border-bottom: 4px solid #1573FF;
         border-radius: 11px;
+        box-shadow: 5px 5px 10px grey;
+        margin: 10px auto 0;
+        width: 90%;
+    }
+    .ideias {
+        width: 90%;
+        height: 320px;
+        text-align: center;
+        border-radius: 35px;
+        background-color: #D9D9D9;
+        border: #000 solid 1px;
+        margin-top: 38px;
+        box-shadow: 5px 5px 10px grey;
+        margin: 10px auto 0;
+        font-size: 16px;
+    }
+    #dicaimg {
+        background-color: #888888;
+        border-radius: 35px 35px 0 0;
+        width: 292px;
+        height: 145px;
+    }
+    /* Obrigado */
+    #fundoobg{
+        text-align: center;
+        margin: 10px auto 0;
+        background-color: #3E6FEC;
+        padding-bottom: 15px;
+        border-radius: 5px;
+        width: 80%;
+    }
+    #meioobg{
+        background-color: #FFF;
+        width: 80%;
+        font-weight: lighter;
+        border-radius: 5px;
+        padding-top: 10px;
+        margin: 10px auto 0;
     }
     /* footer */
     footer {
