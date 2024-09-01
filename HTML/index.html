@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
         * {
             padding: 0px;
@@ -32,16 +34,20 @@
 
 <body>
     <header>
-        <div id="header">
-            <td><a href="index.html"><img id="home" src="../images/casaicon.png" alt="login"></a></td>
-            <td id="espacoheader"></td>
-            <div id="contaicon">
-                <td><a href="cadastro.html">
-                        <p>criar conta</p>
-                    </a></td>
-                <td><a href="cadastro.html"><img id="conta" src="../images/login.png" alt="login"></a></td>
+        <nav class="navbar d-flex justify-content-between align-items-center px-3">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/casaicon.png" class="d-inline-block align-top" alt="">
+            </a>
+        
+            <div class="d-flex align-items-center">
+                <div id="criar_conta" class="me-3">
+                    <a href="cadastro.html" class="btn btn-warning mb-0">CRIAR CONTA</a>
+                    <img src="../images/login.png" alt="conta" id="conta_foto" class="ms-3">
+                </div>
+        
+                 
             </div>
-        </div>
+        </nav>
     </header>
     <nav id="navbar">
         <input type="checkbox" id="check">
@@ -49,9 +55,9 @@
             <i class="fas fa-bars"></i>
         </label>
         <ul>
-            <li><a class="active" href="">produtos</a></li>
-            <li><a href="">serviços</a></li>
-            <li><a href="">dicas</a></li>
+            <li><a class="active" href="produtos.html">produtos</a></li>
+            <li><a href="escolhadeserviço.html">serviços</a></li>
+            <li><a href="dicas.html">dicas</a></li>
         </ul>
     </nav>
     <main>
@@ -93,33 +99,33 @@
                 </button>
             </div>
         </div>
-        <div class="quesomos">
-            <table id="quemsomotbl">
-                <tr>
-                    <td>
-                        <h1>meu trabalho</h1>
-                    </td>
-                    <td>
-                        <p id="quemsomos">Tudo começou quando Luiz ficou desempregado e, em um momento difícil, a máquina de lavar
-                            roupa quebrou.
-                            Sem dinheiro para consertá-la, ele mesmo decidiu tentar o reparo. Surpreendentemente, conseguiu arrumar
-                            a máquina com sucesso, e todas as vezes que quebrava ele mesmo o arrumava.
-                            Maria, sua esposa, viu o potencial de Luiz e quis divulgar o serviço dele, nas redes sociais mas ele não
-                            queria,
-                            mas ela estava Determinada a ajudar, Maria anunciou o serviço de reparo de máquinas de lavar roupa sem
-                            ele saber.
-                            Desde então, várias pessoas começaram a procurar Luiz para consertar suas máquinas, e surgiu também a
-                            oportunidade
-                            de concertar e pequenos reparos em microondas e assim nasceu o nosso negócio.
-                            Hoje, oferecemos serviços de reparo com o mesmo cuidado e dedicação com que Luiz consertou sua própria
-                            máquina
-                            há 12 anos atrás.
-                            Acreditamos que cada reparo é uma oportunidade de fazer a diferença na vida das pessoas, ajudando a
-                            resolver
-                            problemas do dia a dia com eficiência e confiança.</p>
-                    </td>
-                </tr>
-            </table>
+        <div id="trabalho_content">
+            <div id="trabalho_infos">
+                <h2>Especializado em manutenções de maquinas de lavar
+                    e microondas
+                </h2>
+                <img id="imgindex" src="../images/imgindextrabalho.jpg" alt="foto com ferramentas">
+            </div>
+            <div id="quemsomos">
+                <h1>Meu trabalho</h1>
+                <p>Tudo começou quando Luiz ficou desempregado e, em um momento difícil, a máquina de lavar
+                    roupa quebrou.
+                    Sem dinheiro para consertá-la, ele mesmo decidiu tentar o reparo. Surpreendentemente, conseguiu arrumar
+                    a máquina com sucesso, e todas as vezes que quebrava ele mesmo o arrumava.
+                    Maria, sua esposa, viu o potencial de Luiz e quis divulgar o serviço dele, nas redes sociais mas ele não
+                    queria,
+                    mas ela estava Determinada a ajudar, Maria anunciou o serviço de reparo de máquinas de lavar roupa sem
+                    ele saber.
+                    Desde então, várias pessoas começaram a procurar Luiz para consertar suas máquinas, e surgiu também a
+                    oportunidade
+                    de concertar e pequenos reparos em microondas e assim nasceu o nosso negócio.
+                    Hoje, oferecemos serviços de reparo com o mesmo cuidado e dedicação com que Luiz consertou sua própria
+                    máquina
+                    há 12 anos atrás.
+                    Acreditamos que cada reparo é uma oportunidade de fazer a diferença na vida das pessoas, ajudando a
+                    resolver
+                    problemas do dia a dia com eficiência e confiança.</p>
+            </div>
         </div>
     </main>
     <footer>
