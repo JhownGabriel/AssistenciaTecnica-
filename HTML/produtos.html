@@ -22,38 +22,73 @@
         </div>
     </header>
     <nav id="navbar"> 
-        <table>    
-            <tr>
-                <td><a href="produtos.html">produtos</a></td>
-                <td><a href="escolhadeserviço.html">serviços</a></td>
-                <td><a href="dicas.html">dicas</a></td>
-            </tr>
-        </table>
+        <div class="row">
+            <div class="col-sm">produtos</div>
+            <div class="col-sm">serviços</div>
+            <div class="col-sm">dicas</div>
+          </div>
     </nav>
     <main>
         <table>
             <tr>
-                <td>
+                <td class="fundoprod">
                     <div id="produtos"><img src="/images/micro.png" alt=""></div>
-                </td>
-                <td>
                     <p><a href="modelo.html" id="produtoslink">geladeira</a></p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><a href="modelo.html" id="produtoslink">geladeira</a></p>
-                </td>
-                <td>
-                    <div id="produtos2"></div>
                 </td>
             </tr>
         </table>
     </main>
     <footer>
-        <p>Luis ou Maria : (19) 99616-1465</p>
-        <hr>
-        <p>Rua Benedito Alves Barbosa, 98 - Àguas de Lindoia - SP</p>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>&#169 Reparo Tech</h1>
+                <p>Sempre trazendo o melhor serviço</p>
+
+                <div id="footer_social_media">
+                    <a href="" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Acesso Rapído</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">produtos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">dicas</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Contato Profissional</h3>
+
+                <p>
+                    Contate-nos profissionalmente pelo nosso email
+                    para mais informações deixe seu email:
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Direitos Reparo Tech 
+        </div>
     </footer>
 </body>
 

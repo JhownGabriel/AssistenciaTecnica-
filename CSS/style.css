@@ -1,10 +1,12 @@
 /*fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap')
+
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: "Josefin Sans", sans-serif;
     font-style: normal;
 }
@@ -14,30 +16,90 @@ a {
 }
 
 /* mobile */
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 5000px){
     /* header */
     header {
         background-color: #3E6FEC;
+        width: 100vw;
+    }
+    #header {
+        display: inline;
     }
     header p {
         color: #FF9900;
     }
-    #espacoheader{
+    /* #espacoheader{
         padding-left: 180px;
+    } */
+    #contaicon {
+        position: relative;
+        right: 0%;
     }
     /* navbar */
     nav {
         background-color: #3555A7;
         color: #fff;
-        text-align: center;
+        text-decoration: none;
+        height: 80px;
+        width: 100%;
+        list-style: none;
+        box-sizing: border-box;
+        text-transform: uppercase;
     }
-    #navbar {
-        padding: 20px;
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
     }
-    #navbar table tr td {
-        padding-left: 35px;
-        padding-right: auto;
+    nav ul li a {
+        padding: 5px;
+        border-radius: 3px;
+        /* margin-left: 290px; */
     }
+    a.active,a:hover {
+        background-color: #3E6FEC;
+        transition: .5s;
+    }
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+        @media (max-width: 416px) {
+            .checkbtn {
+                display: block;
+            }
+            ul {
+                position: absolute;
+                width: 100%;
+                height: 40vh;
+                background-color: #3555A7;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li {
+                display: block;
+            }
+            nav ul li a {
+                font-size: 20px;
+            }
+            a.active,a:hover {
+                background: none;
+                color: #3E6FEC;
+            }
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
     /* main index */
     .logo-infos {
         text-align: center;
@@ -64,22 +126,24 @@ a {
         width: 294px;
         margin: 10px auto;
     }
-    .quesomos {
-        background-image: url("../images/Vista-aérea-do-centro-de-Águas-de-Lindóia-720x250.jpg") no-repeat;
+    #quemsomostbl {
+        background-color: #9E9E9E;
     }
     .quesomos h1 {
-        text-align: center;
+        float: left;
         padding: 25px;
-        background: rgb(96,165,245);
-        background: linear-gradient(360deg, rgba(96,165,245,1) 0%, rgba(24,68,135,1) 100%); 
+        background-color: #3E6FEC; 
     }
     .quesomos p {
-        background-color: #888888;
-        color: #fff;
-        border-radius: 5px;
+        float: right;
+        background: rgb(157,161,166);
+        background: linear-gradient(360deg, rgba(157,161,166,1) 0%, rgba(215,215,215,1) 100%);
+        opacity: 0.8;
+        color: #000;
+        font-family: "Roboto slab", serif;
         margin: 10px auto 0;
         padding: 10px;
-        font-size: 0.9em;
+        font-size: 1.2em;
         width: 70%;
         text-align: justify;
     }
@@ -161,11 +225,9 @@ a {
         text-align: center;
     }
     #produtos {
-        width: 120px;
-        height: 70px;
-        margin-right: 20px;
+        width: 50vw;
+        height: 20vh;
         background-color: #D9D9D9;
-        border: 2px solid black;
         border-radius: 14px;
         font-family: 'Courier New', Courier, monospace;
         font-size: 16px;
@@ -178,10 +240,19 @@ a {
         border: 2px solid black;
         border-radius: 14px;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 16px;
     }
     #produtoslink {
-        color: #000;
+        width: 50vw;
+        color: #fff;
+        background: rgb(66,141,195);
+        background: linear-gradient(360deg, rgba(66,141,195,1) 0%, rgba(32,67,93,1) 100%);
+        padding: 10px;
+        font-size: 20px;
+    }
+    .fundoprod {
+        background-color: #3555A7;
+        box-shadow: 5px 5px 10px grey;
+        padding: 50px;
     }
     /* modelos */
     .modelos1 {
@@ -267,22 +338,120 @@ a {
     }
     /* footer */
     footer {
-        position: relative;
-        bottom: 0vh;
-        margin-top: 10px;
-        padding: 10px;
-        background-color: #2978ED;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .footer-link {
+        text-decoration: none;
+    }
+    #footer_content {
+        background: rgb(17,50,99);
+        background: linear-gradient(360deg, rgba(17,50,99,1) 0%, rgba(3,46,111,1) 100%);
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 3rem 3.5rem;
+    }
+    #footer_contacts h1 {
+        margin-bottom: 0.75rem;
+    }
+    #footer_social_media {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+    #footer_social_media .footer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
         color: #fff;
-        text-align: center;
+        border-radius: 50%;
+        transition: 0.4s;
     }
-    footer p {
-        margin: 5px;
+    #footer_social_media .footer-link i {
+        font-size: 1.25rem;
     }
-    .logosfooter img {
-        width: 40px;
-        float: right;
+    #footer_social_media .footer-link:hover {
+        opacity: 0.8;
     }
-    .logosfooter tr {
-        background-color: #1573FF;
+    #facebook {
+        background-color: #4267b3;
+    }
+    #whatsapp {
+        background-color: #25d366;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        list-style: none;
+    }
+
+    .footer-list .footer-link {
+        color: #fff;
+        transition: all 0.4s;
+    }
+    .footer-list .footer-link:hover {
+        color: yellow;
+    }
+
+    #footer_subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    #footer_subscribe p {
+        color: #fff;
+    }
+
+    #input_group {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #888888;
+    }
+    #input_group input {
+        all: unset;
+        padding: 0.75rem;
+        width: 100%;
+    }
+    #input_group button {
+        background-color: #7f37c9;
+        border: none;
+        color: white;
+        padding: 0px 1.25rem;
+        font-size: 1.125rem;
+        height: 100%;
+        border-radius: 0px 4px 4px 0px;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+    #input_group button:hover {
+        opacity: 0.8;
+    }
+    #footer_copyright {
+        display: flex;
+        justify-content: center;
+        background: rgb(24,24,24);
+        background: linear-gradient(360deg, rgba(24,24,24,1) 0%, rgba(39,41,43,1) 100%);
+        color: #fff;
+        font-size: 0.9rem;
+        padding: 1.5rem;
+        font-weight: 100;
+    }
+    @media screen and (max-width: 768px){
+        #footer_content {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+    }
+    @media screen and (max-width: 426px){
+        #footer_content {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 3rem 2rem;
+        }
     }
 }
