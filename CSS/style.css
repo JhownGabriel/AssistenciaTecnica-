@@ -23,7 +23,7 @@ main {
 @media only screen and (max-width: 5000px){
     /* header */
     header {
-        background-color: #3E6FEC;
+        background-color:  rgb(17,50,99);
         width: 100%;
     }
     #header {
@@ -38,7 +38,7 @@ main {
     }
     /* navbar */
     nav {
-        background-color: #3555A7;
+        background-color:  rgb(17,50,99);
         color: #fff;
         text-decoration: none;
         height: 80px;
@@ -59,7 +59,7 @@ main {
         /* margin-left: 290px; */
     }
     a.active,a:hover {
-        background-color: #3E6FEC;
+        background-color:  rgb(17,50,99);
         transition: .5s;
     }
     .checkbtn {
@@ -82,7 +82,7 @@ main {
                 position: absolute;
                 width: 100%;
                 height: 40vh;
-                background-color: #3555A7;
+                background-color:  rgb(17,50,99);
                 top: 150px;
                 left: -100%;
                 text-align: center;
@@ -106,7 +106,7 @@ main {
     /* main index */
     .logo-infos {
         text-align: center;
-        background: rgb(65,152,255);
+        background:  rgb(17,50,99);
         background: linear-gradient(180deg, rgba(65,152,255,1) 0%, rgba(15,125,255,1) 100%);
         color: black;
         border: 2px solid black;
@@ -160,13 +160,13 @@ main {
         margin: 10px auto;
     }
     #trabalho_content {
-        background: rgb(0,92,155);
+        background:  rgb(17,50,99);
         background: linear-gradient(180deg, rgba(0,92,155,1) 0%, rgb(38, 53, 134) 90%, rgba(255,255,255,1) 100%);
         width: 80%;
         margin: 10px auto 0;
     }
     #trabalho_infos h2 {
-        background: rgb(0,117,171);
+        background:  rgb(17,50,99);
         background: linear-gradient(180deg, rgba(0,117,171,1) 0%, #005c9b 49%);
         text-shadow: 0px 0px 5px rgb(0, 0, 0);
         color: #fff;
@@ -230,7 +230,7 @@ main {
     .servicos {
         margin: 10px auto 0;
         width: 322px;
-        background: rgb(66,141,195);
+        background:  rgb(17,50,99);
         background: linear-gradient(360deg, rgba(66,141,195,1) 0%, rgba(32,67,93,1) 100%);
         text-align: center; 
         font-size: 18px;
@@ -251,7 +251,7 @@ main {
     /* main conta */
     main div form {
         background-color: #fff;
-        border: 2px solid #2978ED;
+        border: 2px solid  rgb(17,50,99);
         border-radius: 11px;
         margin: 10px auto;
         width: 90%;
@@ -273,7 +273,7 @@ main {
         border-radius: 5px;
     }
     main div div#logo img {
-        background: rgb(53,85,167);
+        background:  rgb(17,50,99);
         background: linear-gradient(180deg, rgba(53,85,167,1) 0%, rgba(44,74,150,1) 47%, rgba(91,113,170,1) 100%);
         border-radius: 5px;
         box-shadow: 5px 10px 8px #888888;
@@ -316,13 +316,13 @@ main {
     #produtoslink {
         width: 50vw;
         color: #fff;
-        background: rgb(66,141,195);
+        background:  rgb(17,50,99);
         background: linear-gradient(360deg, rgba(66,141,195,1) 0%, rgba(32,67,93,1) 100%);
         padding: 10px;
         font-size: 40px;
     }
     .fundoprod {
-        background-color: #3555A7;
+        background-color:  rgb(17,50,99);
         box-shadow: 5px 5px 10px grey;
         padding: 50px;
     }
@@ -404,7 +404,7 @@ main {
     #fundoobg{
         text-align: center;
         margin: 10px auto 0;
-        background-color: #3E6FEC;
+        background-color:  rgb(17,50,99);
         padding-bottom: 15px;
         margin-top: 150px;
         margin-bottom: 150px;
@@ -428,7 +428,7 @@ main {
         text-decoration: none;
     }
     #footer_content {
-        background: rgb(17,50,99);
+        background:  rgb(17,50,99);
         background: linear-gradient(360deg, rgba(17,50,99,1) 0%, rgba(3,46,111,1) 100%);
         color: white;
         display: grid;
@@ -460,7 +460,7 @@ main {
         opacity: 0.8;
     }
     #facebook {
-        background-color: #4267b3;
+        background-color:  rgb(17,50,99);
     }
     #whatsapp {
         background-color: #25d366;
