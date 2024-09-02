@@ -16,9 +16,10 @@ a {
 }
 body {
     background-color: #bfbfbf;
-
 }
-/* mobile */
+main {
+    margin-bottom:50px ;
+}
 @media only screen and (max-width: 5000px){
     /* header */
     header {
@@ -93,9 +94,9 @@ body {
             nav ul li a {
                 font-size: 20px;
             }
-            a.active,a:hover {
+            a.active,a#navbar:hover {
                 background: none;
-                color: #3E6FEC;
+                color: #e9ec3e;
             }
             #check:checked ~ ul {
                 left: 0;
@@ -119,12 +120,23 @@ body {
                 font-size: 30px;
             }
         }
+        @media (max-width: 426px) {
+            .logo-infos {
+                width: 350px;
+                font-size: 30px;
+            }
+        }
     .logo-infos p, img {
         font-family: "Merriweather", serif;
         font-weight: 300;
         font-size: 1em;
         font-style: normal; 
         padding: 7px; 
+    }
+    @media (max-width: 426px) {
+        .logo-infos p, img {
+            padding: 10px;
+        }
     }
     .logo-infos p {
         background-color: white;
@@ -148,11 +160,16 @@ body {
         margin: 10px auto;
     }
     #trabalho_content {
-        background-color: #2978ED;
+        background: rgb(0,92,155);
+        background: linear-gradient(180deg, rgba(0,92,155,1) 0%, rgb(38, 53, 134) 90%, rgba(255,255,255,1) 100%);
         width: 80%;
         margin: 10px auto 0;
     }
     #trabalho_infos h2 {
+        background: rgb(0,117,171);
+        background: linear-gradient(180deg, rgba(0,117,171,1) 0%, #005c9b 49%);
+        text-shadow: 0px 0px 5px rgb(0, 0, 0);
+        color: #fff;
         text-align: center;
         font-size: 40px;
         padding: 10px;
@@ -162,27 +179,52 @@ body {
     }
         @media (max-width: 555px) {
             #trabalho_infos img {
-            width: 400px;
+            width: 300px;
+            }
+        }
+        @media (max-width: 617px) {
+            #trabalho_infos img {
+            width: 490px;
             }
         }
         @media (max-width: 454px) {
             #trabalho_infos img {
-            width: 350px;
+            width: 320px;
             }
         }
+        @media (max-width: 400px) {
+            #trabalho_infos img {
+            width: 300px;
+            }
+        }
+    #quemsomos {
+        box-shadow: 0px 0px 10px rgb(85, 85, 85);
+    }
+    #imgindex {
+        margin: 10px auto 0;
+    }
     #quemsomos h1 {
         color: #fff;
         font-size: 50px;
-        background-color: #4267b3;
+        background-color: #000;
+        padding: 10px;
         text-shadow: 5px 5px 10px rgb(0, 0, 0);
     }
     #quemsomos p {
         width: 60%;
-        color: #fff;
+        color: #000000;
+        background: rgb(250,250,250);
+        background: linear-gradient(180deg, rgba(250,250,250,1) 0%, rgb(255, 255, 255) 100%);
         font-size: 30px;
         text-align: justify;
         line-height: 1.3;
         padding: 10px;
+        margin: 10px auto 0;
+    }
+    @media (max-width: 623px) {
+        #quemsomos p {
+            font-size: 20px;
+        }
     }
     /* main escolhaDeServicos */
     .servicos {
@@ -340,7 +382,7 @@ body {
         margin: 10px auto 0;
         width: 70%;
     }
-    .ideias {
+    #ideias {
         width: 90%;
         height: 320px;
         text-align: center;
@@ -350,7 +392,7 @@ body {
         margin-top: 38px;
         box-shadow: 5px 5px 10px grey;
         margin: 10px auto 0;
-        font-size: 16px;
+        font-size: 30px;
     }
     #dicaimg {
         background-color: #888888;
