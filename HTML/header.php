@@ -61,23 +61,7 @@
             <li><a href="dicas.html">dicas</a></li>
         </ul>
     </nav>
-    <main>
-        <div>
-            <form action="">
-                <div id="logo"><img src="../images/logoazul.png" alt="logo"></div>
-                <h1>Login</h1>
-                <hr>
-                <label for="">email</label><br>
-                <input type="email" name="" id=""><br>
-                <label for="">senha</label><br>
-                <input type="password" name="" id=""><br>
-                <input type="checkbox" name="" id=""><p>manter logado</p>
-                <input id="confirma" type="button" value="logar">
-                <p id="senharecovery">esqueci a senha</p>
-            </form>
-        </div>
-    </main>
-    <footer>
+        <footer>
         <div id="footer_content">
             <div id="footer_contacts">
                 <h1>&#169 Reparo Tech</h1>
@@ -92,6 +76,7 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="100" height="60">
                            
                         </a>
+                    </a>
                 </div>
             </div>
 
@@ -131,4 +116,5 @@
         </div>
     </footer>
 </body>
+
 </html>
