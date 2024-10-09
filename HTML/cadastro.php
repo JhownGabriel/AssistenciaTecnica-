@@ -1,7 +1,7 @@
 <?php
-include_once '../includes/auth.php';
+include_once '../PHP/auth.php';
 // Incluindo o arquivo de conexão com o banco de dados
-include_once '../includes/dbconnect.php';
+include_once '../PHP/includes/dbconnect.php';
 
 // Verificando se a conexão foi criada corretamente
 if (!isset($mysqli)) {
@@ -111,7 +111,7 @@ if (isset($mysqli)) {
                 <label for="">senha</label><br>
                 <input type="text" name="" id=""><br>
 
-                <a href="login.html" style="color: #FF9900;">login</a><br>
+                <a href="login.php" style="color: #FF9900;">login</a><br>
                 <input id="confirma" type="button" value="Confirmar">
             </form>
         </div>
