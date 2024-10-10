@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Executando a query
     if ($stmt->execute()) {
         // Redirecionando para uma página de sucesso ou exibindo uma mensagem de sucesso
-        echo "<script>alert('Usuário cadastrado com sucesso!'); window.location.href='../index.php';</script>";
+        echo "<script>alert('Usuário cadastrado com sucesso!'); window.location.href='index.php';</script>";
     } else {
         // Exibindo uma mensagem de erro
         echo "<script>alert('Erro ao cadastrar o usuário: " . $stmt->error . "');</script>";
@@ -65,54 +65,60 @@ if (isset($mysqli)) {
 ?>
     <main>
         <div>
-            <form action="index.html">
+            <form action="" method="post" id="form_cadastro">
                 <div id="logo"><img src="../images/logoazul.png" alt="logo"></div>
                 <h1>Cadastro</h1>
                 <hr>
-                <label for="">nome</label><br>
-                <input type="text"><br>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" name="nome"><br>
 
-                <label for="">email</label><br>
-                <input type="email" name="" id=""><br>
+                <label for="email">email</label><br>
+                <input type="email" name="email" id="email" required><br>
 
                 <label for="">telefone</label><br>
-                <input type="email" name="" id=""><br>
+                <input type="text" id="telefone" name="telefone" placeholder="(00) 1234-5678"><br>
 
-                <label for="">celular</label><br>
-                <input type="text" name="" id=""><br>
+                <label for="celular">Celular</label><br>
+                <input type="text" name="celular" id="celular"><br>
 
-                <label for="">data de nascimento</label><br>
-                <input type="date" name="" id=""><br>
+                <label for="data_nascimento">Data de nascimento</label><br>
+                <input type="date" name="data_nascimento" id="data_nascimento"><br>
 
-                <label for="">tipo de documento</label><br>
-                <input type="text" name="" id=""><br>
+                <label for="tipo_documento">tipo de documento</label><br>
+                <input type="text" name="tipo_documento" id="tipo_documento" required><br>
 
-                <label for="">documento</label><br>
-                <input type="text" name="" id=""><br>
+                <label for="documento">documento</label><br>
+                <input type="text" name="documento" id="documento" required><br>
 
-                <label for="">uf</label><br>
-                <input type="cidade" name="" id=""><br>
+                <label for="cep">CEP</label><br>
+                <input type="text" name="cep" id="cep" placeholder="00000-000"><br>
 
-                <label for="">bairro</label><br>
-                <input type="text" name="" id=""><br>
+                <label for="cidade">Cidade</label><br>
+                <input type="text" name="cidade" id="cidade" required><br>
 
-                <label for="">rua</label><br>
-                <input type="text" name="" id=""><br>
+                <label for="uf">UF</label><br>
+                <input type="text" name="uf" id="uf" required><br>
 
-                <label for="">numero</label><br>
-                <input type="text" name="" id=""><br>
+                <label for="bairro">Bairro</label><br>
+                <input type="text" name="bairro" id="bairro" required><br>
 
-                <label for="">complemento</label><br>
-                <input type="text" name="" id=""><br>
+                <label for="rua">Rua</label><br>
+                <input type="text" name="rua" id="rua" required><br>
+
+                <label for="numero">Numero</label><br>
+                <input type="text" name="numero" id="numero"><br>
+
+                <label for="complemento">complemento</label><br>
+                <input type="text" name="complemento" id="complemento"><br>
 
                 <label for="">cep</label><br>
                 <input type="text" name="" id=""><br>
 
-                <label for="">senha</label><br>
-                <input type="text" name="" id=""><br>
+                <label for="password">senha</label><br>
+                <input type="password" name="password" id="password" required><br>
 
                 <a href="login.php" style="color: #FF9900;">login</a><br>
-                <input id="confirma" type="button" value="Confirmar">
+                <input id="cadastro_submit" name="Cadastrar" type="submit" value="Confirmar">
             </form>
         </div>
     </main>
