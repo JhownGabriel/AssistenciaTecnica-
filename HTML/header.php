@@ -79,26 +79,16 @@
         <ul>
         <?php  
             if ($nome == "NENHUM"){
-                echo '<a href="index.php">HOME</a>';
+                echo '<li><a id="navbar" class="active" href="index.php">Home</a></li>';
             }else{
-                echo '<a href="login.php" id="nome-nav">Olá, ' . htmlspecialchars($nome) . '</a>';
+                echo '<li class="account" id="login"><a href="login.php" id="login-account">Olá, ' . htmlspecialchars($nome) . '</a></li>';
             } 
         ?>
-            <li><a id="navbar" class="active" href="index.php">Home</a></li>
             <li><a class="active" href="produtos.php">usados</a></li>
             <li><a href="escolhadeserviço.php">serviços</a></li>
             <li><a href="dicas.php">dicas</a></li>
-            <a href="auth/login.php" id="login-account">
-                <li class="account" id="login">LOGIN</li>
-            </a>
-            <a href="cadastro.php" id="login-account">
-                <li class="account" id="register" style="color: #38c938;">CADASTRAR</li>
-            </a>
-            <a href="../PHP/includes/logout.php">
-                <li class="account" id="logout">LOGOUT</li>
-            </a>
-            <a href="admin">
-                <li class="account" id="adminCrud">ADMIN</li>
-            </a>
+            <li class="account" id="register" style="color: #38c938;"><a href="cadastro.php" id="login-account">CADASTRAR</a></li>
+            <a href="../PHP/includes/logout.php"><li class="account" id="logout">LOGOUT</li></a>
+            <a href="admin"><li class="account" id="adminCrud">ADMIN</li></a>
         </ul>
     </nav>

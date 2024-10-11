@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once '../PHP/auth.php';
 // Incluindo o arquivo de conexão com o banco de dados
 include_once '../PHP/includes/dbconnect.php';

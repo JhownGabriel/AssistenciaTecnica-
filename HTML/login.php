@@ -2,12 +2,12 @@
 session_start();
 
 if (isset($_SESSION['logado'])) {
-    header('Location:../index.php');
+    header('Location: index.php');
     exit;
 }
 ?>
 <?php
-    include_once '../PHP/includes/db_connect.php'; // Incluindo a conexão com o banco
+    include_once '../PHP/includes/dbconnect.php'; // Incluindo a conexão com o banco
     
     // Verifica se o formulário foi enviado
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

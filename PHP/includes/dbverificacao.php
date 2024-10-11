@@ -1,6 +1,6 @@
 <?php
     include_once 'dbconnect.php';
-    $mysqli = new mysqli("localhost", "root", "", "AssistenciaTecnica");
+    $mysqli = new mysqli("31.170.167.153", "u335479363_alunos4", "$en4C2024", "u335479363_alunos4");
     
     // vai checar a conexão e se der falha vai mostrar um erro
     if ($mysqli->connect_errno) {
