@@ -17,6 +17,28 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const isLoggedIn = <?php echo isset($_SESSION['logado']) && $_SESSION['logado'] ? 'true' : 'false'; ?>;
+            if (isLoggedIn) {
+                const login = document.getElementById("login");
+                const logout = document.getElementById("logout");
+                const adminCrud = document.getElementById("adminCrud");
+                const register = document.getElementById("register");
+
+                if (login) {
+                    login.remove();
+
+                }
+                
+            }else{
+                logout.remove();
+                console.log("remove admin");
+                adminCrud.remove();
+                register.remove();
+            }
+        });
+    </script>
     <style>
         * {
             padding: 0px;
@@ -55,9 +77,28 @@
             <i class="fas fa-bars"></i>
         </label>
         <ul>
+        <?php  
+            if ($nome == "NENHUM"){
+                echo '<a href="index.php">HOME</a>';
+            }else{
+                echo '<a href="login.php" id="nome-nav">Olá, ' . htmlspecialchars($nome) . '</a>';
+            } 
+        ?>
             <li><a id="navbar" class="active" href="index.php">Home</a></li>
             <li><a class="active" href="produtos.php">usados</a></li>
             <li><a href="escolhadeserviço.php">serviços</a></li>
             <li><a href="dicas.php">dicas</a></li>
+            <a href="auth/login.php" id="login-account">
+                <li class="account" id="login">LOGIN</li>
+            </a>
+            <a href="cadastro.php" id="login-account">
+                <li class="account" id="register" style="color: #38c938;">CADASTRAR</li>
+            </a>
+            <a href="../PHP/includes/logout.php">
+                <li class="account" id="logout">LOGOUT</li>
+            </a>
+            <a href="admin">
+                <li class="account" id="adminCrud">ADMIN</li>
+            </a>
         </ul>
     </nav>
