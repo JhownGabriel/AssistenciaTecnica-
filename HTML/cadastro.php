@@ -1,5 +1,4 @@
 <?php
-session_start();
 include_once '../PHP/auth.php';
 // Incluindo o arquivo de conexão com o banco de dados
 include_once '../PHP/includes/dbconnect.php';
@@ -46,10 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Executando a query
     if ($stmt->execute()) {
         // Redirecionando para uma página de sucesso ou exibindo uma mensagem de sucesso
-        echo "<script>alert('Usuário cadastrado com sucesso!'); window.location.href='index.php';</script>";
+        echo "<script>alert('Usuário cadastrado com sucesso!'); window.location.href='../index.php';</script>";
     } else {
         // Exibindo uma mensagem de erro
-        echo "<script>alert('Erro ao cadastrar o usuário: " . $stmt->error . "');</script>";
+        echo "<script>alert('Erro ao cadastrar o usuário:');</script>";
+        error_log($stmt->error);
     }
 
     // Fechando a declaração
@@ -70,56 +70,79 @@ if (isset($mysqli)) {
                 <div id="logo"><img src="../images/logoazul.png" alt="logo"></div>
                 <h1>Cadastro</h1>
                 <hr>
+                <div class="inputs_cadastro">
                 <label for="nome">Nome</label><br>
-                <input type="text" id="nome" name="nome"><br>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="nome" name="nome" required><br><br>
 
-                <label for="email">email</label><br>
-                <input type="email" name="email" id="email" required><br>
+                <label for="nomesocial">Nome Social</label><br>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="nomesocial" name="nomesocial"><br><br>
 
-                <label for="">telefone</label><br>
-                <input type="text" id="telefone" name="telefone" placeholder="(00) 1234-5678"><br>
+                <label for="email">E-mail</label><br>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone</label><br>
+                <i></i>
+                <input type="text" id="telefone" name="telefone" placeholder="(00) 1234-5678"><br><br>
 
                 <label for="celular">Celular</label><br>
-                <input type="text" name="celular" id="celular"><br>
+                <i></i>
+                <input type="text" id="celular" name="celular" placeholder="(00) 12345-6789"><br><br>
 
-                <label for="data_nascimento">Data de nascimento</label><br>
-                <input type="date" name="data_nascimento" id="data_nascimento"><br>
+                <label for="data_nascimento">Data de Nascimento</label><br>
+                <i></i>
+                <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
 
-                <label for="tipo_documento">tipo de documento</label><br>
-                <input type="text" name="tipo_documento" id="tipo_documento" required><br>
+                <label for="tipo_documento">Tipo do Documento</label><br>
+                <i></i>
+                <input type="text" id="tipo_documento" name="tipo_documento" required><br><br>
 
-                <label for="documento">documento</label><br>
-                <input type="text" name="documento" id="documento" required><br>
+                <label for="documento">Documento</label><br>
+                <i></i>
+                <input type="text" id="documento" name="documento" required><br><br>
 
                 <label for="cep">CEP</label><br>
-                <input type="text" name="cep" id="cep" placeholder="00000-000"><br>
-
-                <label for="cidade">Cidade</label><br>
-                <input type="text" name="cidade" id="cidade" required><br>
-
-                <label for="uf">UF</label><br>
-                <input type="text" name="uf" id="uf" required><br>
-
-                <label for="bairro">Bairro</label><br>
-                <input type="text" name="bairro" id="bairro" required><br>
+                <i></i>
+                <input type="text" id="cep" name="cep" placeholder="00000-000"><br><br>
 
                 <label for="rua">Rua</label><br>
-                <input type="text" name="rua" id="rua" required><br>
+                <i></i>
+                <input type="text" id="rua" name="rua" required><br><br>
 
-                <label for="numero">Numero</label><br>
-                <input type="text" name="numero" id="numero"><br>
+                <label for="numero">Número</label><br>
+                <i></i>
+                <input type="text" id="numero" name="numero" required><br><br>
 
-                <label for="complemento">complemento</label><br>
-                <input type="text" name="complemento" id="complemento"><br>
+                <label for="bairro">Bairro</label><br>
+                <i></i>
+                <input type="text" id="bairro" name="bairro" required><br><br>
 
-                <label for="">cep</label><br>
-                <input type="text" name="" id=""><br>
+                <label for="cidade">Cidade</label><br>
+                <i></i>
+                <input type="text" id="cidade" name="cidade" required><br><br>
 
-                <label for="password">senha</label><br>
-                <input type="password" name="password" id="password" required><br>
+                <label for="uf">UF</label><br>
+                <i></i>
+                <input type="text" id="uf" name="uf" required><br><br>
 
-                <a href="login.php" style="color: #FF9900;">login</a><br>
-                <input id="cadastro_submit" name="Cadastrar" type="submit" value="Confirmar">
+                <label for="complemento">Complemento</label><br>
+                <i></i>
+                <input type="text" id="complemento" name="complemento"><br><br>
+
+                <label for="password">Senha</label><br>
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="password" name="password" required><br><br><br>
+
+                <input type="submit" name="Cadastrar" id="cadastro_submit">
+            </div><br>
+
+            <div class="img_cadastro">
+                Register With:
+                <a href="#"><img src="../multimidia/images/google.png" alt="Google"></a>
+                <a href="#"><img src="../multimidia/images/facebook.png" alt="Facebook"></a>
+            </div>
             </form>
         </div>
     </main>

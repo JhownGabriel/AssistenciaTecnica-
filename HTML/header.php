@@ -57,20 +57,20 @@
 <body>
     <header>
         <nav class="navbar d-flex justify-content-between align-items-center px-3">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <img src="../images/casaicon.png" class="d-inline-block align-top" alt="">
             </a>
-        
             <div class="d-flex align-items-center">
                 <div id="criar_conta" class="me-3">
-                    <a href="cadastro.php" class="btn btn-warning mb-0">CRIAR CONTA</a>
+                    <li class="btn btn-warning mb-0"><a href="cadastro.php" id="login-account">Criar Conta</a></li>
                     <img src="../images/login.png" alt="conta" id="conta_foto" class="ms-3">
                 </div>
-        
-                 
             </div>
         </nav>
     </header>
+    <?php
+        $nome = isset($_SESSION['nome']) ? $_SESSION['nome'] : 'NENHUM';  //definindo o nome do usuario em caso de nulo
+    ?>
     <nav id="navbar">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -87,7 +87,6 @@
             <li><a class="active" href="produtos.php">usados</a></li>
             <li><a href="escolhadeserviço.php">serviços</a></li>
             <li><a href="dicas.php">dicas</a></li>
-            <li class="account" id="register" style="color: #38c938;"><a href="cadastro.php" id="login-account">CADASTRAR</a></li>
             <a href="../PHP/includes/logout.php"><li class="account" id="logout">LOGOUT</li></a>
             <a href="admin"><li class="account" id="adminCrud">ADMIN</li></a>
         </ul>
