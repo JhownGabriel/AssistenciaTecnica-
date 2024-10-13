@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
     <title>Home</title>
     <link rel="stylesheet" href="../CSS/style.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -81,14 +80,19 @@
             if ($nome == "NENHUM"){
                 echo '<li><a id="navbar" class="active" href="index.php">Home</a></li>';
             }else{
-                echo '<li class="account" id="login"><a href="login.php" id="login-account">Olá, ' . htmlspecialchars($nome) . '</a></li>';
+                echo '<li class="account" id="login"><a class="active" href="login.php" id="login-account">Olá, ' . htmlspecialchars($nome) . '</a></li>';
             } 
         ?>
-            <li><a class="active" href="produtos.php">usados</a></li>
-            <li><a class="active" href="login.php">login</a></li>
-            <li><a class="active" href="escolhadeserviço.php">serviços</a></li>
-            <li><a class="active" href="dicas.php">dicas</a></li>
-            <li class="active" class="account" id="logout"><a href="../PHP/includes/logout.php">LOGOUT</a></li>
-            <li class="active" class="account" id="adminCrud"><a href="admin">ADMIN</a></li>
+            <li><a class="active" href="cliente.php">Cliente</a></li>
+            <li><a class="active" href="compra.php">Compra</a></li>
+            <li><a class="active" href="fornecedor.php">Fornecedor</a></li>
+            <li><a class="active" href="itens_compra.php">Itens Compra</a></li>
+            <li><a class="active" href="itens_os.php">Itens OS</a></li>
+            <li><a class="active" href="itens_pedido.php">Itens Pedido</a></li>
+            <li><a class="active" href="ordem_servico.php">Ordem Serviço</a></li>
+            <li><a class="active" href="pedido.php">Pedido</a></li>
+            <li><a class="active" href="produto.php">Produto</a></li>
+            <li><a class="active" href="servico.php">Serviço</a></li>
         </ul>
     </nav>
+</head>

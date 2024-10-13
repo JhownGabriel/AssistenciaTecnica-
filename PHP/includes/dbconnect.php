@@ -1,10 +1,8 @@
 <?php
-define("HOST","localhost");  //host que quer se conectar
-    define("USER", "root"); //usuario para conexao
-    define("PASSWORD", ""); //senha do usuario  
-    define("DATABASE","AssistenciaTecnica");  //qual database
-
-    // define("CAN_REGISTER","any");    //quem pode registrar, qualquer um
-    // define("DEFAULT_ROLE","member");   
-
-    // define("SECURE",FALSE) //SOMENTE PARA DESENVOLVIMENTO !!!
+$localhost = "31.170.167.153";
+    $username = "u335479363_alunos4";
+    $password = '$en4C2024';
+    $dbname = "u335479363_alunos4";
+     $mysqli = mysqli_connect($localhost, $username, $password, $dbname);
+    if($mysqli->connect_error) {   
+        die("connect failed: " .$mysqli->connect_error); }

@@ -1,5 +1,9 @@
 <?php
-include_once '../PHP/auth.php';
+// session_start();
+
+// include_once '../PHP/auth.php';
+
+
 // Incluindo o arquivo de conexão com o banco de dados
 include_once '../PHP/includes/dbconnect.php';
 
@@ -137,12 +141,6 @@ if (isset($mysqli)) {
 
                 <input type="submit" name="Cadastrar" id="cadastro_submit">
             </div><br>
-
-            <div class="img_cadastro">
-                Register With:
-                <a href="#"><img src="../multimidia/images/google.png" alt="Google"></a>
-                <a href="#"><img src="../multimidia/images/facebook.png" alt="Facebook"></a>
-            </div>
             </form>
         </div>
     </main>

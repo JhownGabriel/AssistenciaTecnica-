@@ -1,10 +1,11 @@
 <?php
 session_start();
 
-if (isset($_SESSION['logado'])) {
-    header('Location: index.php');
-    exit;
-}
+// if (isset($_SESSION['logado']) && $_SESSION['logado'] === true) {
+//    header('Location: ../PHP/adm/cliente.php');
+//     exit;
+// }
+
 ?>
 <?php
     include_once '../PHP/includes/dbconnect.php'; // Incluindo a conexão com o banco
@@ -56,11 +57,11 @@ if (isset($_SESSION['logado'])) {
                 <h1>Login</h1>
                 <hr>
                 <label for="email">email</label><br>
-                <input type="email" name="email" id="emai;"><br>
+                <input type="email" name="email" id="email"><br>
                 <label for="password">senha</label><br>
                 <input type="password" name="password" id="password"><br>
                 <input type="checkbox" name="" id=""><p>manter logado</p>
-                <input id="confirma" type="button" value="logar">
+                <button id="confirma" type="submit" value="logar" >Logando</button>
                 <p id="senharecovery">esqueci a senha</p>
             </form>
         </div>

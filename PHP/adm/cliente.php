@@ -5,6 +5,8 @@ include_once '../includes/dbconnect.php';
 $erro = '';
 $success = '';
 
+
+
 // Inserir/Atualizar Cliente
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["nome_cli"], $_POST["documento_cli"], $_POST["tipo_do_documento_cli"], $_POST["data_nascimento"], $_POST["email_cli"], $_POST["rua"], $_POST["bairro"], $_POST["cidade"], $_POST["cep"], $_POST["telefone_cli"], $_POST["uf"])) {
@@ -61,20 +63,9 @@ if (isset($_GET["id_cli"]) && is_numeric($_GET["id_cli"]) && isset($_GET["del"])
 $result = $mysqli->query("SELECT * FROM Cliente WHERE status_cli = 'ativo'");
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes | Francisco Embalagens</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="style/mainAdmin.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-</head>
+<!-- <?php
+    // require_once 'headerCRUD.php';
+?> -->
 
 <body>
     <?php include_once '../../HTML/header.php'; ?>

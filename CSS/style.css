@@ -279,7 +279,7 @@ main {
         box-shadow: 5px 10px 8px #888888;
         margin: 10px;
     }
-    main div form input {
+    main div form button {
         margin: 5px;
     }
     main div form #confirma {
