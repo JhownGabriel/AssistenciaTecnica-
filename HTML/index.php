@@ -31,7 +31,6 @@
             <div id="trabalho_infos">
                 <h2>Especializado em manutenções de maquinas de lavar
                     e microondas há 12 anos.
-                    <img id="imgindex" src="../images/imgindextrabalho.jpg" alt="foto com ferramentas">
                 </h2>
             </div>
             <div id="quemsomos">

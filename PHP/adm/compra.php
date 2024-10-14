@@ -65,7 +65,7 @@ $result = $mysqli->query("SELECT c.*, f.nome_for, u.nome_usu FROM Compra c LEFT 
 
 ?>
 
-<?php include_once '../../HTML/headerCRUD.php' ?>
+<?php require_once 'headerCRUD.php'; ?>
 
 <body>
     <h1>Cadastro de Compras</h1>

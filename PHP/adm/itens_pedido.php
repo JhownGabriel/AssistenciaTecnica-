@@ -60,7 +60,7 @@ $result = $mysqli->query("SELECT ip.*, p.nome_prod, ped.data_ped FROM items_pedi
 
 ?>
 
-<?php include_once '../../HTML/headerCRUD.php' ?>
+<?php require_once 'headerCRUD.php'; ?>
 
 <body>
     <h1>Cadastro de Itens de Pedido</h1>

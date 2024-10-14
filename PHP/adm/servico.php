@@ -60,7 +60,7 @@ if (isset($_GET["id_serv"]) && is_numeric($_GET["id_serv"]) && isset($_GET["del"
 $result = $mysqli->query("SELECT * FROM Servico WHERE status_serv = 'ativo'"); // Somente serviços ativos
 ?>
 
-<?php include_once '../../HTML/headerCRUD.php' ?>
+<?php require_once 'headerCRUD.php'; ?>
 
 <body>
     <h1>Cadastro de Serviços</h1>

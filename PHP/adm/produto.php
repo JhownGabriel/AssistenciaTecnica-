@@ -60,7 +60,7 @@ if (isset($_GET["id_prod"]) && is_numeric($_GET["id_prod"]) && isset($_GET["del"
 $result = $mysqli->query("SELECT * FROM Produto WHERE status_prod != 'Desabilitado'"); // Apenas produtos ativos
 ?>
 
-<?php include_once '../../HTML/headerCRUD.php' ?>
+<?php require_once 'headerCRUD.php'; ?>
 
 <body>
     <h1>Cadastro de Produtos</h1>

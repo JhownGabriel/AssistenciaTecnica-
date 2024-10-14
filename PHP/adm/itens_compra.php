@@ -65,7 +65,7 @@ $result = $mysqli->query("SELECT ic.*, p.nome_prod FROM Items_compra ic LEFT JOI
 
 ?>
 
-<?php include_once '../../HTML/headerCRUD.php' ?>
+<?php require_once 'headerCRUD.php'; ?>
 
 <body>
     <h1>Cadastro de Itens de Compra</h1>

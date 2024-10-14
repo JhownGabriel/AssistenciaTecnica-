@@ -59,7 +59,7 @@ if (isset($_GET["id_ordem"], $_GET["id_serv"]) && is_numeric($_GET["id_ordem"]) 
 $result = $mysqli->query("SELECT io.*, s.nome_serv FROM Items_os io LEFT JOIN Servico s ON io.id_serv = s.id_serv");
 ?>
 
-<?php include_once '../../HTML/headerCRUD.php' ?>
+<?php require_once 'headerCRUD.php'; ?>
 
 <body>
     <h1>Cadastro de Itens de Ordem de Serviço</h1>

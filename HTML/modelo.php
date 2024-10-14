@@ -1,19 +1,6 @@
 <?php
     require_once 'header.php';
 ?>
-    </header>
-    <nav id="navbar">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a id="navbar" class="active" href="Home.html">Home</a></li>
-            <li><a class="active" href="produtos.html">usados</a></li>
-            <li><a href="escolhadeserviço.html">serviços</a></li>
-            <li><a href="dicas.html">dicas</a></li>
-        </ul>
-    </nav>
     <main>
         
         <div class="modelos1">

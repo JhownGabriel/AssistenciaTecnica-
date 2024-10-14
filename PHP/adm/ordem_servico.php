@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $result = $mysqli->query("SELECT os.*, c.nome_cli, u.nome_usu FROM Ordem_servico os LEFT JOIN Cliente c ON os.id_cli = c.id_cli LEFT JOIN Usuario u ON os.id_usu = u.id_usu");
 ?>
 
-<?php include_once '../../HTML/headerCRUD.php' ?>
+<?php require_once 'headerCRUD.php'; ?>
 
 <body>
     <h1>Cadastro de Ordens de Serviço</h1>

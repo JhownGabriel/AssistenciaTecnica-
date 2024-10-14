@@ -63,7 +63,7 @@ if (isset($_GET["id_cli"]) && is_numeric($_GET["id_cli"]) && isset($_GET["del"])
 $result = $mysqli->query("SELECT * FROM Cliente WHERE status_cli = 'ativo'");
 ?>
 
-<?php include_once '../../HTML/headerCRUD.php' ?>
+<?php require_once 'headerCRUD.php'; ?>
 
 <body>
     <h1>Cadastro de Clientes</h1>
@@ -210,5 +210,4 @@ $result = $mysqli->query("SELECT * FROM Cliente WHERE status_cli = 'ativo'");
         </tbody>
     </table>
 </body>
-
 </html>

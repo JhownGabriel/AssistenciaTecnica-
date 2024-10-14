@@ -70,7 +70,7 @@ if (!$fornecedores) {
 }
 ?>
 
-<?php include_once '../../HTML/headerCRUD.php' ?>
+<?php require_once 'headerCRUD.php'; ?>
 
 <body>
 
