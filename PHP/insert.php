@@ -1,7 +1,7 @@
 <?php
 
-require_once 'dbconnect.php';
-require_once 'header.php';
+require_once 'includes/dbconnect.php';
+require_once '../HTML/headerCRUD.php';
 ?>
 <div class="container">
     <?php                       /* analisa se todos os campos estão preenchidos do cadastro */
@@ -16,7 +16,7 @@ require_once 'header.php';
             $contact = $_POST['contact'];
             $sql = "INSERT INTO users(firstname,lastname,address,contact)
         VALUES('$firstname','$lastname','$address','$contact')";
-            if ( $con->query($sql) === TRUE){
+            if ( $mysqli->query($sql) === TRUE){
                 echo "<div class='alert alert-success'>Successfully added new user</div>";
             }else{
                 echo "<div class='alert alert-danger'>Error: There was an error while adding new user</div>";

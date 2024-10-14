@@ -1,5 +1,5 @@
 <?php
-include_once '../auth.php';  //verificar se esta logado
+// include_once '../auth.php';  //verificar se esta logado
 include_once '../includes/dbconnect.php';
 
 $erro = '';
@@ -63,12 +63,9 @@ if (isset($_GET["id_cli"]) && is_numeric($_GET["id_cli"]) && isset($_GET["del"])
 $result = $mysqli->query("SELECT * FROM Cliente WHERE status_cli = 'ativo'");
 ?>
 
-<!-- <?php
-    // require_once 'headerCRUD.php';
-?> -->
+<?php include_once '../../HTML/headerCRUD.php' ?>
 
 <body>
-    <?php include_once '../../HTML/header.php'; ?>
     <h1>Cadastro de Clientes</h1>
 
     <?php if (!empty($erro)): ?>

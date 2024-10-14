@@ -1,6 +1,8 @@
 <?php
-require_once 'connect.php';
-require_once 'header.php';
+require_once 'includes/dbconnect.php';
+?>
+<?php
+require_once '../HTML/header.php';
 ?>
 <div class="container">
     <?php
@@ -15,7 +17,7 @@ require_once 'header.php';
             $lastname = $_POST['lastname'];
             $address = $_POST['address'];
             $contact = $_POST['contact'];
-            $sql = "UPDATE users SET firstname='{$firstname}',lastname = '{$lastname}',address = '{$address}', contact = '{$contact}' WHERE user_id=" . $_POST['userid'];
+            $sql = "UPDATE Usuario SET firstname='{$firstname}',lastname = '{$lastname}',address = '{$address}', contact = '{$contact}' WHERE id_usu=" . $_POST['userid'];
             if ($con->query($sql) === TRUE) {
                 echo "<div class='alert alert-success'>Successfully updated user</div>";
             } else {
@@ -24,8 +26,8 @@ require_once 'header.php';
         }
     }
     $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
-    $sql = "SELECT * FROM users WHERE user_id={$id}";
-    $result = $con->query($sql);
+    $sql = "SELECT * FROM Usuario WHERE id_usu={$id}";
+    $result = $mysqli->query($sql);
     if ($result->num_rows < 1) {
         header('Location: index.php');
         exit;

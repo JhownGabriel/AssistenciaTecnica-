@@ -62,6 +62,7 @@
             </a>
             <div class="d-flex align-items-center">
                 <div id="criar_conta" class="me-3">
+                    <li class="btn btn-warning mb-0"><a class="active" href="login.php">login</a></li>
                     <li class="btn btn-warning mb-0"><a href="cadastro.php" id="login-account">Criar Conta</a></li>
                     <img src="../images/login.png" alt="conta" id="conta_foto" class="ms-3">
                 </div>
@@ -85,7 +86,6 @@
             } 
         ?>
             <li><a class="active" href="produtos.php">usados</a></li>
-            <li><a class="active" href="login.php">login</a></li>
             <li><a class="active" href="escolhadeserviço.php">serviços</a></li>
             <li><a class="active" href="dicas.php">dicas</a></li>
             <li class="active" class="account" id="logout"><a href="../PHP/includes/logout.php">LOGOUT</a></li>

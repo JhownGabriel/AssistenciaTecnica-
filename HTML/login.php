@@ -1,11 +1,6 @@
 <?php
 session_start();
 
-// if (isset($_SESSION['logado']) && $_SESSION['logado'] === true) {
-//    header('Location: ../PHP/adm/cliente.php');
-//     exit;
-// }
-
 ?>
 <?php
     include_once '../PHP/includes/dbconnect.php'; // Incluindo a conexão com o banco
@@ -56,10 +51,17 @@ session_start();
                 <div id="logo"><img src="../images/logoazul.png" alt="logo"></div>
                 <h1>Login</h1>
                 <hr>
+
+                <!-- Exibe a mensagem de erro se houver -->
+                <?php if (!empty($erro_login)): ?>
+                    <p style="color: red;"><?= $erro_login ?></p>
+                <?php endif; ?>
+
                 <label for="email">email</label><br>
                 <input type="email" name="email" id="email"><br>
                 <label for="password">senha</label><br>
                 <input type="password" name="password" id="password"><br>
+                
                 <input type="checkbox" name="" id=""><p>manter logado</p>
                 <button id="confirma" type="submit" value="logar" >Logando</button>
                 <p id="senharecovery">esqueci a senha</p>

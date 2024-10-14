@@ -3,7 +3,7 @@
 
 <head>
 <!DOCTYPE html>
-    <title>Home</title>
+    <title>ADMIN</title>
     <link rel="stylesheet" href="../CSS/style.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -59,12 +59,6 @@
             <a class="navbar-brand" href="index.php">
                 <img src="../images/casaicon.png" class="d-inline-block align-top" alt="">
             </a>
-            <div class="d-flex align-items-center">
-                <div id="criar_conta" class="me-3">
-                    <li class="btn btn-warning mb-0"><a href="cadastro.php" id="login-account">Criar Conta</a></li>
-                    <img src="../images/login.png" alt="conta" id="conta_foto" class="ms-3">
-                </div>
-            </div>
         </nav>
     </header>
     <?php
