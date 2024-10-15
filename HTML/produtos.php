@@ -11,14 +11,6 @@
                     <p><a href="modelo.html" id="produtoslink">maquina de lavar</a></p>
                 </td>
             </tr>
-            <tr id="divisoriaprod">
-                <td class="fundoprod">
-                    <div id="produtos"><img src="/images/micro.png" alt="">
-                    <p>Microondas escovado semi-novo 20 ltros com garantia de 90 dias </p>
-                </div>
-                    <p><a href="modelo.html" id="produtoslink">microondas</a></p>
-                </td>
-            </tr>
         </table>
     </main>
 <?php

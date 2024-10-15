@@ -1,3 +1,6 @@
+body {
+    background-color: #8c8c8c;
+}
 h1, h2 {
     text-align: center;
 }
@@ -20,13 +23,14 @@ input {
 }
 table {
     margin: 10px auto 0;
-    padding: 5px;
 }
 tr th {
     background-color: #1f56a8;
     color: #ffffff;
+    padding: 5px;
 }
 tr td {
     background-color: #727272;
     color: #ffffff;
+    padding: 5px;
 }

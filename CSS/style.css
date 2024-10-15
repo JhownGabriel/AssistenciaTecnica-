@@ -306,29 +306,7 @@ main {
         margin: 10px auto;
         text-align: center;
     }
-    #produtos {
-        width: 50vw;
-        height: 20vh;
-        background-color: #D9D9D9;
-        border-radius: 14px;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    #produtoslink {
-        width: 50vw;
-        color: #fff;
-        background:  rgb(17,50,99);
-        background: linear-gradient(360deg, rgba(66,141,195,1) 0%, rgba(32,67,93,1) 100%);
-        padding: 10px;
-        font-size: 40px;
-    }
-    .fundoprod {
-        background-color:  rgb(17,50,99);
-        box-shadow: 5px 5px 10px grey;
-        padding: 50px;
-    }
-    #divisoriaprod {
-        margin-top: 10px;
-    }
+    
     /* modelos */
     .modelos1 {
         width: 90%;
