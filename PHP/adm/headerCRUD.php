@@ -4,7 +4,7 @@
 <head>
 <!DOCTYPE html>
     <title>ADMIN</title>
-    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/style.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -72,7 +72,7 @@
         <ul>
         <?php  
             if ($nome == "NENHUM"){
-                echo '<li><a id="navbar" class="active" href="index.php">Home</a></li>';
+                echo '<li><a id="navbar" class="active" href="../../HTML/index.php">Home</a></li>';
             }else{
                 echo '<li class="account" id="login"><a class="active" href="login.php" id="login-account">Olá, ' . htmlspecialchars($nome) . '</a></li>';
             } 

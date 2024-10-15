@@ -89,6 +89,6 @@
             <li><a class="active" href="escolhadeserviço.php">serviços</a></li>
             <li><a class="active" href="dicas.php">dicas</a></li>
             <li class="active" class="account" id="logout"><a href="../PHP/includes/logout.php">LOGOUT</a></li>
-            <li class="active" class="account" id="adminCrud"><a href="admin">ADMIN</a></li>
+            <li style="background-color: #000; border-radius: 5px;" class="active" class="account" id="adminCrud"><a href="../PHP/adm/CRUD.php">ADMINISTRADOR</a></li>
         </ul>
     </nav>

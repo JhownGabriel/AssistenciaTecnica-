@@ -1,6 +1,8 @@
 <?php
-require_once '../includes/verificar_login.php';
-require_once '../../HTML/header.php';
+    require_once '../includes/verificar_login.php';
+?>
+<?php
+    require_once 'headerCRUD.php';
 ?>
 <main>
     <h1>Área de Gerenciamento de Clientes</h1>
@@ -16,7 +18,7 @@ require_once '../../HTML/header.php';
         <a class="active" href="produto.php">Produto</a>
         <a class="active" href="servico.php">Serviço</a>
     </div>
-</
+</main>
 <?php
 require_once '../../HTML/footer.php';
 ?>

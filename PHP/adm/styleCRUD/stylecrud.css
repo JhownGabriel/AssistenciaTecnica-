@@ -1,0 +1,32 @@
+h1, h2 {
+    text-align: center;
+}
+form {
+    text-align: center;
+    color: #fff;
+    background-color: #1f56a8;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 60%;
+    margin: 10px auto 0;
+}
+input {
+    border: none;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    box-shadow: 5px 5px 10px grey;
+    font-size: 20px;
+    padding: 5px;
+}
+table {
+    margin: 10px auto 0;
+    padding: 5px;
+}
+tr th {
+    background-color: #1f56a8;
+    color: #ffffff;
+}
+tr td {
+    background-color: #727272;
+    color: #ffffff;
+}

@@ -71,7 +71,7 @@ if (!$fornecedores) {
 ?>
 
 <?php require_once 'headerCRUD.php'; ?>
-
+<link rel="stylesheet" href="styleCRUD/stylecrud.css" type="text/css">
 <body>
 
     <h1>Cadastro de Fornecedores</h1>

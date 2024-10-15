@@ -64,7 +64,7 @@ $result = $mysqli->query("SELECT * FROM Cliente WHERE status_cli = 'ativo'");
 ?>
 
 <?php require_once 'headerCRUD.php'; ?>
-
+<link rel="stylesheet" href="styleCRUD/stylecrud.css" type="text/css">
 <body>
     <h1>Cadastro de Clientes</h1>
 
@@ -134,7 +134,7 @@ $result = $mysqli->query("SELECT * FROM Cliente WHERE status_cli = 'ativo'");
         </script>
 
         <label for="data_nascimento">Data de Nascimento:</label><br>
-        <input type="date" name="data_nascimento"
+        <input type="date" name="data_nascimento" id="data_nascimento"
             value="<?= isset($_POST['data_nascimento']) ? htmlspecialchars($_POST['data_nascimento']) : '' ?>"
             required><br><br>
 

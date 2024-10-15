@@ -50,7 +50,7 @@ $result = $mysqli->query("SELECT os.*, c.nome_cli, u.nome_usu FROM Ordem_servico
 ?>
 
 <?php require_once 'headerCRUD.php'; ?>
-
+<link rel="stylesheet" href="styleCRUD/stylecrud.css" type="text/css">
 <body>
     <h1>Cadastro de Ordens de Serviço</h1>
 
@@ -82,7 +82,7 @@ $result = $mysqli->query("SELECT os.*, c.nome_cli, u.nome_usu FROM Ordem_servico
         </select><br><br>
 
         <label for="id_usu">Usuário:</label><br>
-            <input name="id_usu" value="<?php echo $_SESSION['nome'] ?>" disabled><br><br>
+            <input name="id_usu" value="<?php echo isset($_SESSION['nome']) ? $_SESSION['nome'] : ''; ?>" disabled><br><br>
 
         <button
             type="submit"><?= (isset($_POST['id_ordem']) && $_POST['id_ordem'] != -1) ? 'Salvar' : 'Cadastrar' ?></button>

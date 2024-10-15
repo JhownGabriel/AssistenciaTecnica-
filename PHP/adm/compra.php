@@ -1,6 +1,6 @@
 <?php
-
-include_once '..includes/db_connect.php';
+session_start();
+include_once '../includes/dbconnect.php';
 
 $erro = '';
 $success = '';
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $data_compra = $_POST["data_compra"]; // pega a data do formulário ou a data atual
 
             $id_for = $_POST["id_for"];
-            $id_usu = $_POST["id_usu"];
+            $id_usu = $_SESSION["id"];
             $prev_entrega = $_POST["prev_entrega"];
             $preco_compra = $_POST["preco_compra"];
             $data_entrega_efetiva = !empty($_POST["data_entrega_efetiva"]) ? $_POST["data_entrega_efetiva"] : null;
@@ -66,7 +66,7 @@ $result = $mysqli->query("SELECT c.*, f.nome_for, u.nome_usu FROM Compra c LEFT 
 ?>
 
 <?php require_once 'headerCRUD.php'; ?>
-
+<link rel="stylesheet" href="styleCRUD/stylecrud.css" type="text/css">
 <body>
     <h1>Cadastro de Compras</h1>
 
@@ -99,7 +99,7 @@ $result = $mysqli->query("SELECT c.*, f.nome_for, u.nome_usu FROM Compra c LEFT 
         </select><br><br>
 
         <label for="id_usu">Usuário:</label><br>
-        <input name="id_usu" type="text" value="<?php echo $_SESSION['nome'] ?>" disabled><br><br>
+        <input name="id_usu" type="text" value="<?php echo isset($_SESSION['nome']) ? $_SESSION['nome'] : ''; ?>" disabled><br><br>
 
         <label for="prev_entrega">Previsão de Entrega:</label><br>
         <input type="date" name="prev_entrega"

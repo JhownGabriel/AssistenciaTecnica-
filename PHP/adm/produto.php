@@ -61,7 +61,7 @@ $result = $mysqli->query("SELECT * FROM Produto WHERE status_prod != 'Desabilita
 ?>
 
 <?php require_once 'headerCRUD.php'; ?>
-
+<link rel="stylesheet" href="styleCRUD/stylecrud.css" type="text/css">
 <body>
     <h1>Cadastro de Produtos</h1>
 

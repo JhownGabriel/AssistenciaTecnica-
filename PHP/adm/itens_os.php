@@ -60,7 +60,7 @@ $result = $mysqli->query("SELECT io.*, s.nome_serv FROM Items_os io LEFT JOIN Se
 ?>
 
 <?php require_once 'headerCRUD.php'; ?>
-
+<link rel="stylesheet" href="styleCRUD/stylecrud.css" type="text/css">
 <body>
     <h1>Cadastro de Itens de Ordem de Serviço</h1>
 
